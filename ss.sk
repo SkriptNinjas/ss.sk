@@ -1,0 +1,74 @@
+command /ss <offline player>:
+	permission: mod.gui
+	trigger:
+		wait 3 ticks
+		open chest with 3 rows named "&4/ss &7%arg 1%" to player
+		format slot 22 of player with skull of arg 1 named "&b%arg 1%" to be unstealable
+		format slot 3 of player with paper named "&6Messages" to close then run [make player execute command "/sm %arg 1%"]
+		format slot 5 of player with golden apple named "&6Cheat" to close then run [make player execute command "/sch %arg 1%"]
+		format slot 9 of player with red glass to be unstealable
+		format slot 10 of player with red glass to be unstealable
+		format slot 11 of player with red glass to be unstealable
+		format slot 12 of player with red glass to be unstealable
+		format slot 13 of player with red glass to be unstealable
+		format slot 14 of player with red glass to be unstealable
+		format slot 15 of player with red glass to be unstealable
+		format slot 16 of player with red glass to be unstealable
+		format slot 17 of player with red glass to be unstealable
+		format slot 0 of player with light green glass to be unstealable
+		format slot 1 of player with light green glass to be unstealable
+		format slot 2 of player with light green glass to be unstealable
+		format slot 4 of player with light green glass to be unstealable
+		format slot 6 of player with light green glass to be unstealable
+		format slot 7 of player with light green glass to be unstealable
+		format slot 8 of player with light green glass to be unstealable
+		
+command /sch <offline player>:
+	permission: mod.gui
+	trigger:
+		wait 3 ticks
+		open chest with 3 rows named "&4/ss &7Cheat" to player
+		format slot 22 of player with skull of arg 1 named "&b%arg 1%" to be unstealable
+		format slot 2 of player with cobweb named "&6Anti-Knockback" to close then run [make player execute command "/tempban %arg 1% 2592001s Anti-Kb"]
+		format slot 3 of player with iron sword named "&6Forcefield" to close then run [make player execute command "/tempban %arg 1% 2592001s ForceField"]
+		format slot 4 of player with bow named "&6Reach" to close then run [make player execute command "/tempban %arg 1% 2592001s Reach"]
+		format slot 5 of player with iron axe named "&6Maccro" to close then run [make player execute command "/tempban %arg 1% 2592001s Maccro"]
+		format slot 6 of player with feather named "&6Fly" to close then run [make player execute command "/tempban %arg 1% 2592001s Fly"]
+		format slot 9 of player with red glass to be unstealable
+		format slot 10 of player with red glass to be unstealable
+		format slot 11 of player with red glass to be unstealable
+		format slot 12 of player with red glass to be unstealable
+		format slot 13 of player with red glass to be unstealable
+		format slot 14 of player with red glass to be unstealable
+		format slot 15 of player with red glass to be unstealable
+		format slot 16 of player with red glass to be unstealable
+		format slot 17 of player with red glass to be unstealable
+		format slot 0 of player with light green glass to be unstealable
+		format slot 1 of player with light green glass to be unstealable
+		format slot 7 of player with light green glass to be unstealable
+		format slot 8 of player with light green glass to be unstealable
+		
+command /sm <offline player>:
+	permission: mod.gui
+	trigger:
+		wait 3 ticks
+		open chest with 3 rows named "&4/ss &7Messages" to player
+		format slot 22 of player with skull of arg 1 named "&b%arg 1%" to be unstealable
+		format slot 2 of player with tnt named "&6Spam" to close then run [make player execute command "/mute %arg 1% 1081s Spam"]
+		format slot 3 of player with splash potion named "&6Provocation" to close then run [make player execute command "/mute %arg 1% 1081s Provocation"]
+		format slot 4 of player with creeper head named "&6Insulte" to close then run [make player execute command "/mute %arg 1% 1081s Insultes"]
+		format slot 5 of player with carrot on a stick named "&6DDOS" to close then run [make player execute command "/mute %arg 1% 1081s DDOS/Hack"]
+		format slot 6 of player with skeleton head named "&6Menaces" to close then run [make player execute command "/mute %arg 1% 1081s Menaces"]
+		format slot 9 of player with red glass to be unstealable
+		format slot 10 of player with red glass to be unstealable
+		format slot 11 of player with red glass to be unstealable
+		format slot 12 of player with red glass to be unstealable
+		format slot 13 of player with red glass to be unstealable
+		format slot 14 of player with red glass to be unstealable
+		format slot 15 of player with red glass to be unstealable
+		format slot 16 of player with red glass to be unstealable
+		format slot 17 of player with red glass to be unstealable
+		format slot 0 of player with light green glass to be unstealable
+		format slot 1 of player with light green glass to be unstealable
+		format slot 7 of player with light green glass to be unstealable
+		format slot 8 of player with light green glass to be unstealable
